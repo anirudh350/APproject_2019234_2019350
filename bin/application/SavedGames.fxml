@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="mainPane" prefHeight="639.0" prefWidth="667.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SaveGameController">
+   <children>
+      <ImageView fitHeight="199.0" fitWidth="229.0" layoutX="391.0" layoutY="331.0" rotate="54.8">
+         <image>
+            <Image url="@../../../../Downloads/cvv1.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="231.0" fitWidth="248.0" layoutX="52.0" layoutY="380.0">
+         <image>
+            <Image url="@../../../../Downloads/cvv1.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="112.0" layoutY="35.0" text="CHOOSE A GAME TO RESUME " textFill="#eeeaea">
+         <font>
+            <Font name="Constantia" size="31.0" />
+         </font>
+      </Label>
+      <Button layoutX="152.0" layoutY="266.0" mnemonicParsing="false" onAction="#exitButton" prefHeight="21.0" prefWidth="364.0" style="-fx-background-color: black;" text="EXIT TO MAIN MENU" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS" size="25.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="mainPane" onKeyPressed="#handleOnKeyPressed" onKeyReleased="#handleOnKeyReleased" prefHeight="1084.0" prefWidth="649.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.PlayGameController">
+	<children>
+		<Button layoutX="471.0" layoutY="72.0" mnemonicParsing="false" onAction="#pauseGame" onKeyPressed="#pauseGameKey" prefHeight="49.0" prefWidth="157.0" style="-fx-background-color: black;" text="PAUSE MENU" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS Bold" size="18.0" />
+         </font>
+		</Button>
+		<ImageView fitHeight="58.0" fitWidth="59.0" layoutX="529.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+			<image>
+				<Image url="@assets/hi.jpg" />
+			</image>
+		</ImageView>
+		<Circle fx:id="c" fill="#f4d01c" layoutX="325.0" layoutY="999.0" radius="14.0" stroke="#f4d01c" strokeType="INSIDE" />
+      <Label fx:id="scoreLabel" layoutX="40.0" layoutY="26.0" text="SCORE" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS Bold" size="24.0" />
+         </font>
+      </Label>
+      <Group layoutX="-411.0" layoutY="-41.0" rotate="-3.6" />
+      <Group fx:id="o1" layoutX="2.0" layoutY="442.0">
+         <children>
+            <Arc fx:id="arc1" centerX="323.0" centerY="298.0" fill="#f4d01c00" length="85.0" radiusX="135.0" radiusY="126.0" startAngle="92.9" stroke="#f4d01c" strokeLineCap="BUTT" strokeLineJoin="ROUND" strokeWidth="23.0" />
+            <Arc fx:id="arc4" centerX="323.0" centerY="298.0" fill="#26faff00" length="85.0" radiusX="135.0" radiusY="126.0" startAngle="-87.3" stroke="#26faff" strokeLineCap="BUTT" strokeLineJoin="ROUND" strokeWidth="23.0" />
+            <Arc fx:id="arc3" centerX="323.0" centerY="298.0" fill="#ff30cf00" layoutX="-1.0" layoutY="-1.0" length="85.0" radiusX="135.0" radiusY="126.0" startAngle="-177.5" stroke="#ff30cf" strokeLineCap="BUTT" strokeLineJoin="ROUND" strokeWidth="23.0" />
+            <Arc fx:id="arc2" centerX="323.0" centerY="298.0" fill="#bc1ddb00" length="85.0" radiusX="135.0" radiusY="126.0" startAngle="4.1" stroke="#bc1ddb" strokeLineCap="BUTT" strokeLineJoin="ROUND" strokeWidth="23.0" />
+            <Circle fx:id="c1" fill="TRANSPARENT" layoutX="323.0" layoutY="300.0" radius="5.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+            <ImageView fx:id="i2" fitHeight="57.0" fitWidth="63.0" layoutX="291.0" layoutY="272.0">
+               <image>
+                  <Image url="@assets/star.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Group>
+      <Group fx:id="o4" layoutX="213.0" layoutY="-210.0">
+         <children>
+            <Rectangle fx:id="rc1" arcHeight="5.0" arcWidth="5.0" fill="#f4d01c" height="134.0" layoutX="181.0" layoutY="-851.0" stroke="BLACK" strokeType="INSIDE" width="28.0" />
+            <Rectangle fx:id="rc3" arcHeight="5.0" arcWidth="5.0" fill="#ff30cf" height="134.0" layoutX="80.0" layoutY="-851.0" stroke="BLACK" strokeType="INSIDE" width="28.0" />
+            <Rectangle fx:id="rc2" arcHeight="5.0" arcWidth="5.0" fill="#bc1ddb" height="134.0" layoutX="408.0" layoutY="-851.0" stroke="BLACK" strokeType="INSIDE" width="28.0" />
+            <Rectangle fx:id="rc4" arcHeight="5.0" arcWidth="5.0" fill="#26faff" height="134.0" layoutX="290.0" layoutY="-851.0" stroke="BLACK" strokeType="INSIDE" width="28.0" />
+         </children>
+      </Group>
+      <Group fx:id="o2" layoutX="401.0" layoutY="1052.0">
+         <children>
+            <Rectangle fx:id="r3" arcHeight="5.0" arcWidth="5.0" fill="#ff30cf" height="134.0" layoutX="-211.0" layoutY="-969.0" stroke="BLACK" strokeType="INSIDE" width="28.0" />
+            <Rectangle fx:id="r1" arcHeight="5.0" arcWidth="5.0" fill="#f4d01c" height="134.0" layoutX="-292.0" layoutY="-902.0" rotate="90.0" stroke="BLACK" strokeType="INSIDE" width="28.0" />
+            <Rectangle fx:id="r4" arcHeight="5.0" arcWidth="5.0" fill="#26faff" height="134.0" layoutX="-130.0" layoutY="-902.0" rotate="90.0" stroke="BLACK" strokeType="INSIDE" width="28.0" />
+            <Rectangle fx:id="r2" arcHeight="5.0" arcWidth="5.0" fill="#bc1ddb" height="134.0" layoutX="-211.0" layoutY="-835.0" stroke="BLACK" strokeType="INSIDE" width="28.0" />
+         </children>
+      </Group>
+      <Group fx:id="o3" layoutX="474.0" layoutY="175.0">
+         <children>
+            <Rectangle fx:id="re3" arcHeight="5.0" arcWidth="5.0" fill="#ff30cf" height="207.0" layoutX="-181.0" layoutY="-795.0" rotate="90.0" stroke="BLACK" strokeType="INSIDE" width="28.0" />
+            <Rectangle fx:id="re4" arcHeight="5.0" arcWidth="5.0" fill="#26faff" height="207.0" layoutX="-302.0" layoutY="-681.0" stroke="BLACK" strokeType="INSIDE" width="28.0" />
+            <Rectangle fx:id="re1" arcHeight="5.0" arcWidth="5.0" fill="#f4d01c" height="207.0" layoutX="-63.0" layoutY="-680.0" stroke="BLACK" strokeType="INSIDE" width="28.0" />
+            <Rectangle fx:id="re2" arcHeight="5.0" arcWidth="5.0" fill="#bc1ddb" height="207.0" layoutX="-182.0" layoutY="-565.0" rotate="90.0" stroke="BLACK" strokeType="INSIDE" width="28.0" />
+            <Circle fx:id="c11" fill="TRANSPARENT" layoutX="-168.0" layoutY="-586.0" radius="37.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+            <ImageView fx:id="i3" fitHeight="64.0" fitWidth="65.0" layoutX="-199.0" layoutY="-618.0" rotate="-20.6">
+               <image>
+                  <Image url="@assets/star.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Group>
+      <Group fx:id="i1" layoutX="304.0" layoutY="431.0">
+         <children>
+            <Circle fx:id="c12" fill="TRANSPARENT" layoutX="21.0" layoutY="25.0" radius="35.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+            <ImageView fitHeight="49.0" fitWidth="41.0">
+               <image>
+                  <Image url="@assets/sw.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Group>
+      <Group fx:id="Label" layoutX="150.0" layoutY="531.0" visible="false">
+         <children>
+            <Label fx:id="scoreLabel1" layoutX="-135.0" layoutY="-135.0" text="PRESS C TO CONTINUE GAME" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="scoreLabel2" layoutX="-135.0" layoutY="-42.0" prefHeight="28.0" prefWidth="309.0" text="PRESS R TO RESTART GAME" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="scoreLabel21" layoutX="-131.0" layoutY="-88.0" text="PRESS PAUSE MENU BUTTON TO GO TO THE PAUSE MENU" textFill="WHITE">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Group>
+	</children>
+</AnchorPane>
